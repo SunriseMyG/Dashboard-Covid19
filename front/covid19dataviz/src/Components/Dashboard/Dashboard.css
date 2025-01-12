@@ -1,0 +1,525 @@
+
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    /* bottom: 4px;
+    top: 4px;
+    right: 4px;
+    left: 4px; */
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-left-container {
+    display: flex;
+    flex-direction: column;
+    width: 72%;
+}
+
+.dashboard-last-update {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    background-color: #2b2b2b;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #404040;
+}
+
+.dashboard-left-stat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dashboard-last-update p {
+    font-weight: bold;
+    color: red;
+}
+
+.dashboard-last-update p,
+.dashboard-last-update h4 {
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.dashboard-last-update h4 {
+    color: white;
+    line-height: 1;
+    font-size: 32px;
+}
+
+.last-mounth-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 18px;
+    margin-left: 18px;
+    /* width: 76%; */
+}
+
+.month {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 76%;
+}
+
+.dashboard-total-cases {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    background-color: #2b2b2b;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #404040;
+}
+
+.dashboard-total-cases p {
+    font-weight: bold;
+    color: white;
+}
+
+.dashboard-total-cases h4 {
+    color: red;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0;
+}
+
+
+.info-by-month {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    height: 90%;
+    /* justify-content: space-between; */
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    width: 24%;
+}
+
+.info h1 {
+    color: white;
+}
+
+.searchbar {
+    position: sticky;
+    top: 0;
+    background-color: #2b2b2b;
+    z-index: 10;
+    padding: 10px;
+    border-bottom: 1px solid #404040;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #3b3b3b;
+    border: 1px solid #404040;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.all-country {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* max-height: 93%; */
+    height: 77.5vh;
+    overflow-y: auto;
+    background-color: #2b2b2b;
+}
+
+.all-country-container {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+}
+
+.all-country-btn {
+    margin-inline-start: 15px;
+}
+
+.all-country-btn button {
+    cursor: pointer;
+    border: none;
+    background-color: #2b2b2b;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #404040;
+    color: white;
+}
+
+.all-country-btn button:hover {
+    background-color: #202020;
+}
+
+.map-btn {
+    margin-inline-start: 45px;
+}
+
+.map-btn button {
+    cursor: pointer;
+    border: none;
+    background-color: #2b2b2b;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #404040;
+    color: white;
+}
+
+.map-btn button:hover {
+    background-color: #202020;
+}
+
+.dashboard-total-deaths {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    background-color: #2b2b2b;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #404040;
+}
+
+.dashboard-total-deaths p {
+    font-weight: bold;
+    color: white;
+}
+
+.dashboard-total-deaths h4 {
+    color: white;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0;
+}
+
+.dashboard-total-vaccine {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    background-color: #2b2b2b;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #404040;
+}
+
+.dashboard-total-vaccine p {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.dashboard-total-vaccine h4 {
+    color: green;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0;
+}
+
+.month-case {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2b2b2b;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #404040;
+}
+
+.month-case p {
+    font-weight: bold;
+    color: white;
+}
+
+.month-case h4 {
+    color: red;
+    font-size: 32px;
+    line-height: 1;
+    margin: 0;
+}
+
+.month-death {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2b2b2b;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #404040;
+}
+
+.month-death p {
+    font-weight: bold;
+    color: white;
+}
+
+.month-death h4 {
+    color: white;
+    font-size: 32px;
+    line-height: 1;
+    margin: 0;
+}
+
+.month-vaccine {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2b2b2b;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #404040;
+}
+
+.month-vaccine p {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.month-vaccine h4 {
+    color: #008000;
+    font-size: 32px;
+    line-height: 1;
+    margin: 0;
+}
+
+.dashboard-right-container {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    /* height: 100vh; */
+    height: 87vh;
+    /* justify-content: space-around; */
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.world-map-container {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2b2b;
+    /* align-items: center; */
+    /* justify-content: center; */
+    border: 1px solid #404040;
+    /* height: 70vh; */
+    height: 90%;
+    /* flex-grow: 1; */
+}
+
+.leaflet-tile {
+    filter: grayscale(100%) brightness(30%) sepia(20%) hue-rotate(180deg) !important;
+}
+
+.each-country {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #404040;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.each-country:hover {
+    background-color: #111;
+}
+
+.each-country p {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+.each-country h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 100;
+    color: #d6d6d6;
+    /* padding-left: 20px; */
+}
+
+.title-each-country {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.each-country-mounth {
+    display: flex;
+    flex-direction: row;
+}
+
+.each-country-total {
+    display: flex;
+    flex-direction: row;
+}
+
+.graphic-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    background-color: #2b2b2b;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #404040;
+    height: 100%;
+}
+
+.each-country-mounth .data-eact-country-data-first {
+    padding-left: 0;
+    padding-right: 5px;
+    color: red;
+    font-weight: bold;
+}
+
+.each-country-mounth .data-eact-country-data-second {
+    padding-left: 0;
+    padding-right: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.each-country-total .data-eact-country-data-first {
+    padding-left: 0;
+    padding-right: 5px;
+    color: red;
+    font-weight: bold;
+}
+
+.each-country-total .data-eact-country-data-second {
+    padding-left: 0;
+    padding-right: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.terms-of-use {
+    height: 820px
+}
+
+@media (max-width: 1600px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .dashboard-left-container {
+        width: 100%;
+    }
+
+    .dashboard-right-container {
+        width: 100%;
+    }
+
+    .graphic-container {
+        margin-left: 0;
+    }
+
+    .all-country-container {
+        width: 24%;
+        min-width: 270px;
+    }
+
+    .dashboard-left-stat h4 {
+        font-size: 24px;
+    }
+
+    .dashboard-last-update {
+        min-width: 270px;
+    }
+
+    .dashboard-left-stat {
+        gap: 18px;
+    }
+}
+
+@media (max-widt: 1200px) {
+    .all-country {
+        height: 70vh;
+    }
+}
+
+/* phone size media */
+@media only screen and (max-width: 768px) {
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .info-by-month {
+        flex-direction: column;
+    }
+
+    .all-country-container {
+        width: 100%;
+    }
+
+    .month {
+        width: 100%;
+    }
+
+    .last-mounth-container {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .world-map-container {
+        height: 50vh;
+        margin-left: 0px;
+    }
+
+    .dashboard-left-stat {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .dashboard-last-update {
+        width: 100%;
+    }
+
+    .dashboard-total-cases {
+        width: 100%;
+    }
+    
+    .dashboard-total-deaths {
+        width: 100%;
+    }
+
+    .dashboard-total-vaccine {
+        width: 100%;
+    }
+
+    .last-mounth-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .terms-of-use {
+        height: 620px;
+    }
+
+}

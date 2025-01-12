@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../src/fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #353535;
+}
+
+.App-header {
+  height: 44px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #1e376d;
+}
+
+.App-header h1 {
+  font-family: 'Avenir Next';
+  font-size: 1.625rem;
+  margin-inline-end: 0.5rem;
+  color: white;
+  font-weight: 400;
+}
+
+.App-header p {
+  color: white;
+}
+
+.App-logo {
+  width: 5%;
+  height: 50%;
+}
+
+@media (max-width: 1024px) {
+  .App {
+    overflow-y: auto;
+  }
+
+  .App-header {
+    height: 80px;
+  }
+
+
+  
+}
+
+
+@media (max-width: 1700px) {
+  .App {
+    overflow-y: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .App-header {
+    height: 110px;
+  }
+}

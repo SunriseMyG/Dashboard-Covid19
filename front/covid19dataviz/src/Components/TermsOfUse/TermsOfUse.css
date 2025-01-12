@@ -1,0 +1,18 @@
+
+
+.text-fields {
+    /* padding: .375rem; */
+    /* max-height: 90%; */
+    height: 100%;
+    overflow-y: auto;
+    color: white;
+}
+
+.text-fields p {
+    padding: .375rem;
+}
+
+.text-fields a {
+    color: #00a0ff;
+    text-decoration: underline;
+}
